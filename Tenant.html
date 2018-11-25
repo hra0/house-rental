@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Owner's Registration
+	</title>
+	<link rel="stylesheet" href="ownerstyle.css">
+	<style>
+body {
+    background-color:#FADBD8  ;
+}
+</style>
+	</head>
+<body background="Tenan.jpg">
+	<h1>Registration Form</h1>
+	<div class="reg">
+		<form id="reg" method="post" action="registration.php">
+			<h2>Register Here</h2>
+			<label>First Name:</label></br>
+			<input type="text" name="name" placeholder="First Name" id="name" required>
+			</br></br><label>Last Name:</label></br>
+			<input type="text" name="name" placeholder="Last Name" id="name" required></br>
+			</br><label>Email:</label></br>
+			<input type="e-mail" title="Contact's email (format: xxx@xxx.xxx)" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" name="email" size="40" placeholder="Enter your E-mail i'd Here" id="E-mail" required></br>
+			</br><label>Password:</label> </br>
+			<input type="Password" name="Password" size="40" placeholder="Enter Password" id="Password" required></br>
+			</br><label>Re-Enter password:</label></br>
+			<input type="Password" name="Password" size="40" placeholder="Re-enter Password" id="Password" required><br>
+			<br><label>Mobile Number:</label></br>
+			<input type="Text" name="Mobile Number" pattern="[6-9]{1}[0-9]{9}" title="Phone number with 6-9 and remaing 9 digit with 0-9" size="40" maxlength="10" placeholder="Enter Mobile Number" id="Mobile Number" required><br>
+			<br>
+			<label>Aadhar Number</label></br>
+			<input type="Text" size="40" name="Aadhar" placeholder="Enter Aadhar Number" id="Aadhar" required>
+			<br></br>
+			<label>Date of Birth:</label></br>
+			<input type="Date" size="40" name="Date" id="DATE" required>
+			<br></br><label>Gender:</label></br>
+			<input type="radio" id="male">
+			<span id="ma">Male</span><input type="radio" id="male">
+			<span id="ma">Female</span><input type="radio" id="male">
+			<span id="ma">Others</span></br></br>
+			<input type="checkbox" id="ch"><span id="ch"> I Agree all the terms and Conditions</span>
+			</br><button type="Submit" onclick="phonenumber(document.form1.text1)"> Register<button>
+		</form>
+		
+</body>
+</html>
